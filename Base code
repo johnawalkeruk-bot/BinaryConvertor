@@ -1,0 +1,28 @@
+input_code  = input('What is the code?')
+def convert_to_binary(code):
+ code = code.replace(" ","0000")
+ code = code.replace("1", "0001")
+ code = code.replace("2", "0010")
+ code = code.replace("3", "0011")
+ code = code.replace("4", "0100")
+ code = code.replace("5", "0101")
+ code = code.replace("6", "0110")
+ code = code.replace("7", "0111")
+ code = code.replace("8", "1000")
+ code = code.replace("9", "1001")
+ code = code.replace("10", "1010")
+ code = code.replace("11", "1011")
+ code = code.replace("12", "1100")
+ code = code.replace("13", "1101")
+ code = code.replace("14", "1110")
+ code = code.replace("15", "1111")
+
+
+ return code
+
+input_code = "input"
+print(f"Input code: {input_code}")
+
+binary = convert_to_binary(input_code)
+
+print(f"Encoded: {binary}")
